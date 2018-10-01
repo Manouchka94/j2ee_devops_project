@@ -68,6 +68,7 @@ public final class ConnexionForm {
         
         else {
             resultat = "Échec de la connexion.";
+            b = false;
         }
 
         Map<String, Object> o = new HashMap<String, Object>();
