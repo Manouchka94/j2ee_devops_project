@@ -6,6 +6,6 @@
         <title>Accès public</title>
     </head>
     <body>
-        <p>Vous n'avez pas accès à l'espace restreint : vous devez vous <a href="connexion">connecter</a> d'abord. </p>
+        <p>Vous n'avez pas accès à l'espace restreint : vous devez vous <a href="connexion">connecter</a> d'abord.pou </p>
     </body>
 </html>
