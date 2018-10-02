@@ -80,7 +80,7 @@
 							<p class="text-center text-muted">Lorem ipsum dolor sit amet, <a href="signin.html">Login</a> adipisicing elit. Quo nulla quibusdam cum doloremque incidunt nemo sunt a tenetur omnis odio. </p>
 							<hr>
 
-							<form>
+        					<form method="post" action="inscription">
 								<div class="top-margin">
 									<label>Prénom</label>
 									<input type="text" class="form-control" id="prenom" name="prenom" value="<c:out value="${utilisateur.prenom}"/>" size="20" maxlength="20"/>
@@ -124,6 +124,9 @@
 									</div>
 								</div>
 							</form>
+												<p class="${empty formulaire.erreurs ? 'succes' : 'erreur'}">
+	                	<c:out value="${formulaire.resultat}"/>
+	                </p>
 						</div>
 					</div>
 
