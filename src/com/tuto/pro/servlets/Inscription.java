@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 public class Inscription extends HttpServlet {
     public static final String ATT_USER = "utilisateur";
     public static final String ATT_FORM = "formulaire";
-    public static final String VUE = "/WEB-INF/inscription.jsp";
+    public static final String VUE = "/WEB-INF/signup.jsp";
     public static final String CONF_DAO_FACTORY = "daofactory";
 
     private UtilisateurDao utilisateurDao;

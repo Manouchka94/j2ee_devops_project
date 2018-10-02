@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Connexion</title>
-        <link type="text/css" rel="stylesheet" href="<c:url value="/inc/form.css"/>" />
+        <link type="text/css" rel="stylesheet" href="<c:url value="/inc/assets/css/form.css"/>" />
     </head>
     <body>
         <form method="post" action="connexion">
@@ -16,7 +16,7 @@
                 	<p class="info">(Vous ne vous êtes pas connecté(e) depuis ce navigateur depuis ${requestScope.intervalleConnexions})</p>
                 </c:if>
 
-                <label for="nom">Adresse email <span class="requis">*</span></label>
+                <label for="email">Adresse email <span class="requis">*</span></label>
                 <input type="email" id="email" name="email" value="<c:out value="${utilisateur.email}"/>" size="20" maxlength="60" />
                 <span class="erreur">${form.erreurs['email']}</span>
                 <br />
