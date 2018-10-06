@@ -31,11 +31,11 @@ public class Connexion extends HttpServlet {
     public static final String  ATT_CHECK_PASSWORD        = "checkPassword";
     public static final String  COOKIE_DERNIERE_CONNEXION = "derniereConnexion";
     public static final String  FORMAT_DATE               = "dd/MM/yyyy HH:mm:ss";
-    public static final String  VUE                       = "/WEB-INF/connexion.jsp";
+    public static final String  VUE                       = "/WEB-INF/signin.jsp";
     public static final String  VUE_OK                    = "/restreint/vue_ok.jsp";
     public static final String  CHAMP_MEMOIRE             = "memoire";
     public static final int     COOKIE_MAX_AGE            = 60 * 60 * 24 * 365;  // 1 an
-    public static final String CONF_DAO_FACTORY = "daofactory";
+    public static final String  CONF_DAO_FACTORY = "daofactory";
     
     private UtilisateurDao utilisateurDao;
     

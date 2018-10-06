@@ -22,8 +22,8 @@
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <%-- 	[if lt IE 9]>
-	<script src="<c:url value="assets/js/html5shiv.js"></c:url>"></script>
-	<script src="<c:url value="assets/js/respond.min.js"></c:url>"></script>
+	<script src="<c:url value="/inc/assets/js/html5shiv.js"></c:url>"></script>
+	<script src="<c:url value="/inc/assets/js/respond.min.js"></c:url>"></script>
 	<![endif] --%>
 </head>
 
