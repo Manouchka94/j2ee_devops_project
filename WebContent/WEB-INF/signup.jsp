@@ -1,5 +1,3 @@
-<%@ page pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +32,7 @@
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="index.html"><img src="<c:url value="/inc/assets/images/logo.png"></c:url>" alt="Progressus HTML5 template"></a>
+				<a class="navbar-brand" href="index.html"><img src="<c:url value="/inc/assets/images/devops_logo.png"></c:url>" alt="Progressus HTML5 template"></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
@@ -82,7 +80,7 @@
 
         					<form method="post" action="inscription">
 								<div class="top-margin">
-									<label>PrÃ©nom</label>
+									<label>Prénom</label>
 									<input type="text" class="form-control" id="prenom" name="prenom" value="<c:out value="${utilisateur.prenom}"/>" size="20" maxlength="20"/>
 									<span class="erreur">${formulaire.erreurs['prenom']}</span>
 								</div>
