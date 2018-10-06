@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
-	<title>Sign in - Progressus Bootstrap template</title>
+	<title>Application Demo DevOps</title>
 
 	<link rel="shortcut icon" href="/inc/assets/images/gt_favicon.png">
 	
@@ -32,7 +32,7 @@
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="index.html"><img src="<c:url value="/inc/assets/images/devops_logo.png"></c:url>" alt="Progressus HTML5 template"></a>
+				<a class="navbar-brand" href="<c:url value="/connexion"></c:url>"><img src="<c:url value="/inc/assets/images/devops_logo.png"></c:url>" alt="Demo DevOps"></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
@@ -109,6 +109,27 @@
 		<div class="footer1">
 			<div class="container">
 				<div class="row">
+
+					<div class="col-md-4 widget">
+						<h3 class="widget-title">Présentation de l'application</h3>
+						<div class="widget-body">
+							<p>
+								Cette application a été déployée grâce aux outils de plateforme DevOps.<br>
+								Objectif : Application de démonstration pour le service DevOps DSIT.<br><br>
+							</p>
+						</div>
+					</div>
+					
+					<div class="col-md-4 widget">
+						<h3 class="widget-title">Spécification technique</h3>
+						<div class="widget-body">
+							<p>
+								Langage : 	J2EE<br>
+								SGBD : 		PostgreSQL<br>
+								Build : 	Maven
+							</p>
+						</div>
+					</div>
 					
 					<div class="col-md-3 widget">
 						<h3 class="widget-title">Contact</h3>
@@ -121,21 +142,6 @@
 						</div>
 					</div>
 
-					<div class="col-md-6 widget">
-						<h3 class="widget-title">Présentation de l'application</h3>
-						<div class="widget-body">
-							<p>
-								Cette application a été déployée grâce aux outils de plateforme DevOps.<br>
-								Objectif : Application de démonstration pour le service DevOps DSIT.<br><br>
-								
-								Spécification technique :<br>
-								Langage : 	J2EE<br>
-								SGBD : 		PostgreSQL<br>
-								Build : 	Maven
-							</p>
-						</div>
-					</div>
-
 				</div> <!-- /row of widgets -->
 			</div>
 		</div>
@@ -143,10 +149,19 @@
 		<div class="footer2">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 widget">
+				
+					<div class="col-md-6 widget pull-left">
+						<div class="widget-body text-left">
+							<p>
+								Service DevOps DSIT
+							</p>
+						</div>
+					</div>				
+				
+					<div class="col-md-6 widget pull-right">
 						<div class="widget-body text-right">
 							<p>
-								Copyright &copy; Edf 2018, Service DevOps DSIT
+								Copyright &copy; Edf 2018
 							</p>
 						</div>
 					</div>
