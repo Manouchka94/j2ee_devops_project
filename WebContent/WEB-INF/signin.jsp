@@ -8,22 +8,22 @@
 	
 	<title>Application Demo DevOps</title>
 
-	<link rel="shortcut icon" href="/inc/assets/images/gt_favicon.png">
+	<link rel="shortcut icon" href="<c:url value="/inc/assets/images/gt_favicon.png"></c:url>">
 	
 	<link rel="stylesheet" media="screen" href="<c:url value="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"></c:url>">
-	<link rel="stylesheet" href="<c:url value="/inc/assets/css/bootstrap.min.css"></c:url>">
-	<link rel="stylesheet" href="<c:url value="/inc/assets/css/font-awesome.min.css"></c:url>">
+	<link type="text/css" rel="stylesheet" href="<c:url value="/inc/assets/css/bootstrap.min.css"></c:url>">
+	<link type="text/css" rel="stylesheet" href="<c:url value="/inc/assets/css/font-awesome.min.css"></c:url>">
 
 	<!-- Custom styles for our template -->
-	<link rel="stylesheet" href="<c:url value="/inc/assets/css/bootstrap-theme.css"></c:url>" media="screen" >
-	<link rel="stylesheet" href="<c:url value="/inc/assets/css/main.css"></c:url>">
+	<link type="text/css" rel="stylesheet" href="<c:url value="/inc/assets/css/bootstrap-theme.css"></c:url>" media="screen" >
+	<link type="text/css" rel="stylesheet" href="<c:url value="/inc/assets/css/main.css"></c:url>">
     <link type="text/css" rel="stylesheet" href="<c:url value="/inc/assets/css/form.css"></c:url>" />
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
+	<%--[if lt IE 9]>
 	<script src="<c:url value="/inc/assets/js/html5shiv.js"></c:url>"></script>
 	<script src="<c:url value="/inc/assets/js/respond.min.js"></c:url>"></script>
-	<![endif]-->
+	<![endif]--%>
 </head>
 
 <body>

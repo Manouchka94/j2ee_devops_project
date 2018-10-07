@@ -20,10 +20,10 @@
 	<link type="text/css" rel="stylesheet" href="<c:url value="/inc/assets/css/form.css"></c:url>" />
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<%-- 	[if lt IE 9]>
+	<%--[if lt IE 9]>
 	<script src="<c:url value="/inc/assets/js/html5shiv.js"></c:url>"></script>
 	<script src="<c:url value="/inc/assets/js/respond.min.js"></c:url>"></script>
-	<![endif] --%>
+	<![endif]--%>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="index.html"><img src="<c:url value="/inc/assets/images/devops_logo.png"></c:url>" alt="Demo DevOps"></a>
+				<a class="navbar-brand" href="<c:url value="/connexion"></c:url>"><img src="<c:url value="/inc/assets/images/devops_logo.png"></c:url>" alt="Demo DevOps"></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
