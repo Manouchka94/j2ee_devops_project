@@ -79,33 +79,33 @@
 			
 			<h2 class="text-center">Les équipes</h2>
 			
-			<div class="row">
-				<div class="col-md-2 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Bootstrap-powered</h4></div>
+			<div class="row text-center">
+				<div class="col-md-4 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Intégration Continue</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquid adipisci aspernatur. Soluta quisquam dignissimos earum quasi voluptate. Amet, dignissimos, tenetur vitae dolor quam iusto assumenda hic reprehenderit?</p>
 					</div>
 				</div>
-				<div class="col-md-2 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-flash fa-5"></i>Fat-free</h4></div>
+				<div class="col-md-4 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-check-circle fa-5"></i>Test Continu</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi, sequi quis ad fugit omnis cumque a libero error nesciunt molestiae repellat quos perferendis numquam quibusdam rerum repellendus laboriosam reprehenderit! </p>
 					</div>
 				</div>
-				<div class="col-md-2 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-heart fa-5"></i>Creative Commons</h4></div>
+				<div class="col-md-4 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-arrow-circle-o-right fa-5"></i>Déploiement Continu</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, vitae, perferendis, perspiciatis nobis voluptate quod illum soluta minima ipsam ratione quia numquam eveniet eum reprehenderit dolorem dicta nesciunt corporis?</p>
 					</div>
 				</div>
-				<div class="col-md-2 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Author's support</h4></div>
+				<div class="col-md-6 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-lock fa-5"></i>Sécurité Continue</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, excepturi, maiores, dolorem quasi reprehenderit illo accusamus nulla minima repudiandae quas ducimus reiciendis odio sequi atque temporibus facere corporis eos expedita? </p>
 					</div>
 				</div>
-				<div class="col-md-2 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Author's support</h4></div>
+				<div class="col-md-6 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-wrench fa-5"></i>Exploitation Continue</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, excepturi, maiores, dolorem quasi reprehenderit illo accusamus nulla minima repudiandae quas ducimus reiciendis odio sequi atque temporibus facere corporis eos expedita? </p>
 					</div>
