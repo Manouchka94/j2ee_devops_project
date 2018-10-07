@@ -43,7 +43,7 @@ public class Home extends HttpServlet{
         /* Récupération de la session depuis la requête */
         HttpSession session = request.getSession();
         
-        utilisateur = (Utilisateur) session.getAttribute( ATT_USER );
+        //utilisateur = (Utilisateur) session.getAttribute( ATT_USER );
         
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
         

@@ -40,6 +40,8 @@ public final class ConnexionForm {
         /* Récupération des champs du formulaire */
         String email = getValeurChamp( request, CHAMP_EMAIL );
         String motDePasse = getValeurChamp( request, CHAMP_PASS );
+        String prenom = new String();
+        String nom = new String();
 
         Utilisateur utilisateur = new Utilisateur();
 
@@ -49,7 +51,10 @@ public final class ConnexionForm {
         /* Initialisation du résultat global de la validation. */
         if ( erreurs.isEmpty() ) {
             
-            String encryptedPassword = utilisateurDao.trouver( email ).getMotDePasse();
+            Utilisateur utilisateur_rslt = utilisateurDao.trouver( email );
+            
+            
+            String encryptedPassword = utilisateur_rslt.getMotDePasse();
             
             ConfigurablePasswordEncryptor passwordEncryptor = new ConfigurablePasswordEncryptor();
             passwordEncryptor.setAlgorithm( ALGO_CHIFFREMENT );
@@ -59,6 +64,10 @@ public final class ConnexionForm {
             
             if(b) {
                 resultat = "Succès de la connexion.";
+                prenom = utilisateur_rslt.getPrenom();
+                nom = utilisateur_rslt.getNom();
+                utilisateur.setPrenom( prenom );
+                utilisateur.setNom( nom );
             }
             
             else {

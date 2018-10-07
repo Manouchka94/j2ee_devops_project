@@ -48,20 +48,16 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="lead">
-					Salut
-					<c:out value="${ command.client.lastName }"></c:out> <br/>
+					Salut 
+					<c:out value="${sessionScope.sessionUtilisateur.prenom}"></c:out> <br/>
 				</h1>
-				<p class="tagline">PROGRESSUS: free business bootstrap template by <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">GetTemplate</a></p>
-				<p><a class="btn btn-default btn-lg" role="button">MORE INFO</a> <a class="btn btn-action btn-lg" role="button">DOWNLOAD NOW</a></p>
+				<p class="tagline">Bienvenue sur l'application de demonstration.</p>
 			</div>
 		</div>
 	<div class="container text-center">
 		<br> <br>
-		<h2 class="thin">The best place to tell people why they are here</h2>
-		<p class="text-muted">
-			The difference between involvement and commitment is like an eggs-and-ham breakfast:<br> 
-			the chicken was involved; the pig was committed.
-		</p>
+		<h2 class="thin">Cette application a été déployée via la plateforme DevOps.</h2>
+		<p><a class="btn btn-default btn-lg top-space" role="button">S'informer</a>
 	</div>
 	</header>
 	<!-- /Header -->
@@ -81,28 +77,34 @@
 	<div class="jumbotron">
 		<div class="container">
 			
-			<h3 class="text-center thin">Les équipes</h3>
+			<h2 class="text-center">Les équipes</h2>
 			
 			<div class="row">
-				<div class="col-md-3 col-sm-6 highlight">
+				<div class="col-md-2 col-sm-6 highlight">
 					<div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Bootstrap-powered</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquid adipisci aspernatur. Soluta quisquam dignissimos earum quasi voluptate. Amet, dignissimos, tenetur vitae dolor quam iusto assumenda hic reprehenderit?</p>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 highlight">
+				<div class="col-md-2 col-sm-6 highlight">
 					<div class="h-caption"><h4><i class="fa fa-flash fa-5"></i>Fat-free</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi, sequi quis ad fugit omnis cumque a libero error nesciunt molestiae repellat quos perferendis numquam quibusdam rerum repellendus laboriosam reprehenderit! </p>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 highlight">
+				<div class="col-md-2 col-sm-6 highlight">
 					<div class="h-caption"><h4><i class="fa fa-heart fa-5"></i>Creative Commons</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, vitae, perferendis, perspiciatis nobis voluptate quod illum soluta minima ipsam ratione quia numquam eveniet eum reprehenderit dolorem dicta nesciunt corporis?</p>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 highlight">
+				<div class="col-md-2 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Author's support</h4></div>
+					<div class="h-body text-center">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, excepturi, maiores, dolorem quasi reprehenderit illo accusamus nulla minima repudiandae quas ducimus reiciendis odio sequi atque temporibus facere corporis eos expedita? </p>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6 highlight">
 					<div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Author's support</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, excepturi, maiores, dolorem quasi reprehenderit illo accusamus nulla minima repudiandae quas ducimus reiciendis odio sequi atque temporibus facere corporis eos expedita? </p>
