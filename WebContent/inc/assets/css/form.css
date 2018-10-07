@@ -37,10 +37,23 @@ form .requis {
 
 form .succes {
     color: #090;
+    font: normal 22px helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 form .erreur {
     color: #900;
+    font: normal 22px helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+form .erreur-info{
+    color: #900;
+    font: normal 12px helvetica, sans-serif;
+    font-weight: italic;
+/*     padding-top: 10px; */
 }
 
 form .info {

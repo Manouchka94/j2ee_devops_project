@@ -3733,7 +3733,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 .nav>li>a {
 	position: relative;
 	display: block;
-	padding: 10px 15px
+	padding: 10px
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
@@ -5220,7 +5220,7 @@ a.list-group-item-info.active, a.list-group-item-info.active:hover, a.list-group
 
 .panel-body {
 	padding: 15px;
-    margin-top: 18px;
+    margin-top: 35px;
     margin-bottom: 19px;
 }
 

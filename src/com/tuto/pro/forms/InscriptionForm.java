@@ -154,8 +154,13 @@ public final class InscriptionForm {
     }
 
     private void validationNom( String nom ) throws FormValidationException {
-        if ( nom != null && nom.length() < 3 ) {
-            throw new FormValidationException( "Ce champ doit contenir au moins 3 caractères." );
+        if (nom != null) {
+            if ( nom.length() < 3 ) {
+                throw new FormValidationException( "Ce champ doit contenir au moins 3 caractères." );
+            }
+        }
+        else {
+            throw new FormValidationException( "Ce champ ne doit pas être vide." );
         }
     }
     

@@ -17,6 +17,7 @@
 	<!-- Custom styles for our template -->
 	<link rel="stylesheet" href="<c:url value="/inc/assets/css/bootstrap-theme.css"></c:url>" media="screen" >
 	<link rel="stylesheet" href="<c:url value="/inc/assets/css/main.css"></c:url>">
+    <link type="text/css" rel="stylesheet" href="<c:url value="/inc/assets/css/form.css"></c:url>" />
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -36,7 +37,7 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
-					<li class="active"><a class="btn" href="signin.html">Créer votre compte</a></li>
+					<li class="active"><a class="btn" href="<c:url value="/inscription"></c:url>">Créer votre compte</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -79,7 +80,7 @@
 					                </c:if>
 					                
 					                <c:if test="${checkPassword eq false}">
-					                	<p class="erreur">${form.resultat}</p>
+					                	<p class="erreur-info">${form.resultat}</p>
 					                </c:if>  
                 					
 								</div>
@@ -103,77 +104,7 @@
 		</div>
 	</div>	<!-- /container -->
 	
-
-	<footer id="footer" class="top-space">
-
-		<div class="footer1">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-md-4 widget">
-						<h3 class="widget-title">Présentation de l'application</h3>
-						<div class="widget-body">
-							<p>
-								Cette application a été déployée grâce aux outils de plateforme DevOps.<br>
-								Objectif : Application de démonstration pour le service DevOps DSIT.<br><br>
-							</p>
-						</div>
-					</div>
-					
-					<div class="col-md-4 widget">
-						<h3 class="widget-title">Spécification technique</h3>
-						<div class="widget-body">
-							<p>
-								Langage : 	J2EE<br>
-								SGBD : 		PostgreSQL<br>
-								Build : 	Maven
-							</p>
-						</div>
-					</div>
-					
-					<div class="col-md-3 widget">
-						<h3 class="widget-title">Contact</h3>
-						<div class="widget-body">
-							<p>
-								<a href="mailto:#">some.email@edf.fr</a><br>
-								Edf DSIT <br>
-								32 Avenue Pablo Picasso - 92000 Nanterre
-							</p>	
-						</div>
-					</div>
-
-				</div> <!-- /row of widgets -->
-			</div>
-		</div>
-
-		<div class="footer2">
-			<div class="container">
-				<div class="row">
-				
-					<div class="col-md-6 widget pull-left">
-						<div class="widget-body text-left">
-							<p>
-								Service DevOps DSIT
-							</p>
-						</div>
-					</div>				
-				
-					<div class="col-md-6 widget pull-right">
-						<div class="widget-body text-right">
-							<p>
-								Copyright &copy; Edf 2018
-							</p>
-						</div>
-					</div>
-
-				</div> <!-- /row of widgets -->
-			</div>
-		</div>
-	</footer>	
-		
-
-
-
+	<c:import url="/WEB-INF/footer.jsp"></c:import>
 
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
