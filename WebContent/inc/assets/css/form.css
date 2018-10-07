@@ -16,11 +16,11 @@ legend {
 
 /* Forms --------------------------------------------------------------------------------------- */
 
-form label {
+/* form label {
     float: left;
     width: 200px;
     margin: 3px 0px 0px 0px;
-}
+} */
 
 form input {
     margin: 3px 3px 0px 0px;
