@@ -99,18 +99,18 @@ public class Connexion extends HttpServlet {
         }
 
         /* Si et seulement si la case du formulaire est cochée */
-        if ( request.getParameter( CHAMP_MEMOIRE ) != null ) {
-            /* Récupération de la date courante */
+/*        if ( request.getParameter( CHAMP_MEMOIRE ) != null ) {
+             Récupération de la date courante 
             DateTime dt = new DateTime();
-            /* Formatage de la date et conversion en texte */
+             Formatage de la date et conversion en texte 
             DateTimeFormatter formatter = DateTimeFormat.forPattern( FORMAT_DATE );
             String dateDerniereConnexion = dt.toString( formatter );
-            /* Création du cookie, et ajout à la réponse HTTP */
+             Création du cookie, et ajout à la réponse HTTP 
             setCookie( response, COOKIE_DERNIERE_CONNEXION, dateDerniereConnexion, COOKIE_MAX_AGE );
         } else {
-            /* Demande de suppression du cookie du navigateur */
+             Demande de suppression du cookie du navigateur 
             setCookie( response, COOKIE_DERNIERE_CONNEXION, "", 0 );
-        }
+        }*/
 
         /* Stockage du formulaire et du bean dans l'objet request */
         request.setAttribute( ATT_FORM, form );
