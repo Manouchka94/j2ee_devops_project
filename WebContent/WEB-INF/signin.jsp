@@ -104,7 +104,7 @@
 		</div>
 	</div>	<!-- /container -->
 	
-	<c:import url="/WEB-INF/footer.jsp"></c:import>
+<%-- 	<c:import url="/WEB-INF/footer.jsp"></c:import> --%>
 
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

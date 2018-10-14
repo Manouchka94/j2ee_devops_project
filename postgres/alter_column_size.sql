@@ -1,1 +1,0 @@
-ALTER TABLE usersdevops ALTER COLUMN password TYPE VARCHAR(64);

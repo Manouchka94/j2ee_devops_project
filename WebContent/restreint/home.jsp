@@ -45,7 +45,7 @@
 
 	<!-- Header -->
 	<header id="head">
-		<div class="container">
+		<div class="container vignets">
 			<div class="row">
 				<h1 class="lead">
 					Salut 
@@ -54,7 +54,7 @@
 				<p class="tagline">Bienvenue sur l'application de demonstration.</p>
 			</div>
 		</div>
-	<div class="container text-center">
+	<div class="container text-center vignets1">
 		<br> <br>
 		<h2 class="thin">Cette application a été déployée via la plateforme DevOps.</h2>
 		<p><a class="btn btn-default btn-lg top-space" role="button">S'informer</a>
