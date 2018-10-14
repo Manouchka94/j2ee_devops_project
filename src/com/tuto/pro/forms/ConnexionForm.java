@@ -53,25 +53,31 @@ public final class ConnexionForm {
             
             Utilisateur utilisateur_rslt = utilisateurDao.trouver( email );
             
-            
-            String encryptedPassword = utilisateur_rslt.getMotDePasse();
-            
-            ConfigurablePasswordEncryptor passwordEncryptor = new ConfigurablePasswordEncryptor();
-            passwordEncryptor.setAlgorithm( ALGO_CHIFFREMENT );
-            passwordEncryptor.setPlainDigest( false );
-            
-            b = passwordEncryptor.checkPassword( motDePasse, encryptedPassword );
-            
-            if(b) {
-                resultat = "Succès de la connexion.";
-                prenom = utilisateur_rslt.getPrenom();
-                nom = utilisateur_rslt.getNom();
-                utilisateur.setPrenom( prenom );
-                utilisateur.setNom( nom );
+            if(utilisateur_rslt == null) {
+                resultat = "L'email " + email + " ne renvoie aucun utilisateur";
+                b = false;
             }
-            
+                
             else {
-                resultat = "Mot de passe saisi incorrect.";
+                String encryptedPassword = utilisateur_rslt.getMotDePasse();
+                
+                ConfigurablePasswordEncryptor passwordEncryptor = new ConfigurablePasswordEncryptor();
+                passwordEncryptor.setAlgorithm( ALGO_CHIFFREMENT );
+                passwordEncryptor.setPlainDigest( false );
+                
+                b = passwordEncryptor.checkPassword( motDePasse, encryptedPassword );
+                
+                if(b) {
+                    resultat = "Succès de la connexion.";
+                    prenom = utilisateur_rslt.getPrenom();
+                    nom = utilisateur_rslt.getNom();
+                    utilisateur.setPrenom( prenom );
+                    utilisateur.setNom( nom );
+                }
+                
+                else {
+                    resultat = "Mot de passe saisi incorrect.";
+                }
             }
         }
         

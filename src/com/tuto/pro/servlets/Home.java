@@ -36,8 +36,6 @@ public class Home extends HttpServlet{
         request.setAttribute( ATT_FORM, formulaire );
         request.setAttribute( ATT_USER, utilisateur );
         
-        /*HttpSession session = request.getSession();*/
-        
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
         
     }

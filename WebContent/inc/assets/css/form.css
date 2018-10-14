@@ -51,7 +51,7 @@ form .erreur {
 
 form .erreur-info{
     color: #900;
-    font: normal 12px helvetica, sans-serif;
+    font: bold 15px helvetica, sans-serif;
     font-weight: italic;
 /*     padding-top: 10px; */
 }

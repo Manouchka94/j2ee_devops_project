@@ -12,11 +12,13 @@ public class Deconnexion extends HttpServlet {
     public static final String URL_REDIRECTION = "/pro/connexion";
 
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
-        /* Récupération et destruction de la session en cours */
+        /* Récupération de la session en cours */
         HttpSession session = request.getSession();
+        
+        /* Destruction de la session en cours */ 
         session.invalidate();
 
-        /* Redirection vers le Site du Zéro ! */
+        /* Redirection vers la page d'accueil */
         response.sendRedirect( URL_REDIRECTION );
         
     }

@@ -40,7 +40,6 @@ public class Connexion extends HttpServlet {
     private UtilisateurDao utilisateurDao;
     
     public void init() throws ServletException {
-        /* Récupération d'une instance de notre DAO Utilisateur */
         this.utilisateurDao = ( (DAOFactory) getServletContext().getAttribute( CONF_DAO_FACTORY ) ).getUtilisateurDao();
     }
     
