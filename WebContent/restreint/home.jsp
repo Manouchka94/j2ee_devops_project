@@ -93,7 +93,15 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-arrow-circle-o-right fa-5"></i>Déploiement Continu</h4></div>
+					<div class="h-caption">
+						<h4>
+								<i>
+									<a class="h-caption fa fa-arrow-circle-o-right fa-5" href="<c:url value="/inc/assets/fichiers_app/hello_app.txt"></c:url>" download="Support_deploiement-continu_${sessionScope.sessionUtilisateur.prenom}_${sessionScope.sessionUtilisateur.nom}">
+									</a>
+								</i>
+							Déploiement Continu
+						</h4>
+					</div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, vitae, perferendis, perspiciatis nobis voluptate quod illum soluta minima ipsam ratione quia numquam eveniet eum reprehenderit dolorem dicta nesciunt corporis?</p>
 					</div>
