@@ -1,2 +1,7 @@
+# folders
 /build/
 /target/
+
+# files
+.classpath
+.project
