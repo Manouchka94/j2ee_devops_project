@@ -21,7 +21,6 @@ public class Home extends HttpServlet{
     private UtilisateurDao utilisateurDao;
 
     public void init() throws ServletException {
-        /* Récupération d'une instance de notre DAO Utilisateur */
         this.utilisateurDao = ( (DAOFactory) getServletContext().getAttribute( CONF_DAO_FACTORY ) ).getUtilisateurDao();
     }
     
@@ -32,18 +31,12 @@ public class Home extends HttpServlet{
     public void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
         
         InscriptionForm formulaire = new InscriptionForm(utilisateurDao);
-        
         Utilisateur utilisateur = new Utilisateur();
-        
-        //utilisateur = formulaire.inscrireUtilisateur( request );
         
         request.setAttribute( ATT_FORM, formulaire );
         request.setAttribute( ATT_USER, utilisateur );
         
-        /* Récupération de la session depuis la requête */
-        HttpSession session = request.getSession();
-        
-        //utilisateur = (Utilisateur) session.getAttribute( ATT_USER );
+        /*HttpSession session = request.getSession();*/
         
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
         

@@ -361,10 +361,29 @@ form .erreur {
     }
 }
 
-i a{
+i a {
 	color: #fcb129;
 }
 
-i a:hover{
+i a:hover {
 	color: #49ca42;
+}
+
+.questions {
+    background: linear-gradient(to bottom, #195f9a 0%, #428bca 100%);
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+	padding-bottom: 50px;
+}
+
+.questions h2, .questions .row, .questions h4{
+	color: #ffffff;
+}
+
+.questions a{
+    color: #fcb129;
+    font-style: italic;
 }

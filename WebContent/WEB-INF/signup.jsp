@@ -97,12 +97,6 @@
 								<hr>
 
 								<div class="row">
-<!-- 									<div class="col-lg-8">
-										<label class="checkbox">
-											<input type="checkbox"> 
-											I've read the <a href="page_terms.html">Terms and Conditions</a>
-										</label>                        
-									</div> -->
 									<div class="text-center">
 										<button class="btn btn-action" type="submit" value="Inscription">Inscription</button>
 									</div>
@@ -126,16 +120,11 @@
 				</div>
 				
 			</article>
-			<!-- /Article -->
 
 		</div>
-	</div>	<!-- /container -->
-	
-<%-- 	<c:import url="/WEB-INF/footer.jsp"></c:import> --%>
+	</div>
 
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="<c:url value="/inc/assets/js/headroom.min.js"></c:url>"></script>
 	<script src="<c:url value="/inc/assets/js/jQuery.headroom.min.js"></c:url>"></script>
 	<script src="<c:url value="/inc/assets/js/template.js"></c:url>"></script>

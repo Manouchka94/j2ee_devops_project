@@ -19,19 +19,16 @@ public class Inscription extends HttpServlet {
     private UtilisateurDao utilisateurDao;
 
     public void init() throws ServletException {
-        /* Récupération d'une instance de notre DAO Utilisateur */
         this.utilisateurDao = ( (DAOFactory) getServletContext().getAttribute( CONF_DAO_FACTORY ) ).getUtilisateurDao();
     }
     
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
-        /* Affichage de la page d'inscription */
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
     }
 
     public void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
         
         InscriptionForm formulaire = new InscriptionForm(utilisateurDao);
-        
         Utilisateur utilisateur = new Utilisateur();
         
         utilisateur = formulaire.inscrireUtilisateur( request );

@@ -82,13 +82,13 @@
 			<div class="row text-center">
 				<div class="col-md-4 col-sm-6 highlight">
 					<div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Intégration Continue</h4></div>
-					<div class="h-body text-center">
+					<div class="h-body text-left">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquid adipisci aspernatur. Soluta quisquam dignissimos earum quasi voluptate. Amet, dignissimos, tenetur vitae dolor quam iusto assumenda hic reprehenderit?</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 highlight">
 					<div class="h-caption"><h4><i class="fa fa-check-circle fa-5"></i>Test Continu</h4></div>
-					<div class="h-body text-center">
+					<div class="h-body text-left">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi, sequi quis ad fugit omnis cumque a libero error nesciunt molestiae repellat quos perferendis numquam quibusdam rerum repellendus laboriosam reprehenderit! </p>
 					</div>
 				</div>
@@ -102,19 +102,19 @@
 							Déploiement Continu
 						</h4>
 					</div>
-					<div class="h-body text-center">
+					<div class="h-body text-left">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, vitae, perferendis, perspiciatis nobis voluptate quod illum soluta minima ipsam ratione quia numquam eveniet eum reprehenderit dolorem dicta nesciunt corporis?</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6 highlight">
 					<div class="h-caption"><h4><i class="fa fa-lock fa-5"></i>Sécurité Continue</h4></div>
-					<div class="h-body text-center">
+					<div class="h-body text-left">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, excepturi, maiores, dolorem quasi reprehenderit illo accusamus nulla minima repudiandae quas ducimus reiciendis odio sequi atque temporibus facere corporis eos expedita? </p>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6 highlight">
 					<div class="h-caption"><h4><i class="fa fa-wrench fa-5"></i>Exploitation Continue</h4></div>
-					<div class="h-body text-center">
+					<div class="h-body text-left">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, excepturi, maiores, dolorem quasi reprehenderit illo accusamus nulla minima repudiandae quas ducimus reiciendis odio sequi atque temporibus facere corporis eos expedita? </p>
 					</div>
 				</div>
@@ -125,7 +125,7 @@
 	<!-- /Highlights -->
 
 	<!-- container -->
-	<div class="container">
+	<div class="container questions">
 
 		<h2 class="text-center top-space">Frequently Asked Questions</h2>
 		<br>
@@ -158,28 +158,30 @@
 			</div>
 		</div> <!-- /row -->
 
-		<div class="jumbotron top-space">
+</div>
+
+		<div class="container jumbotron top-space">
 			<h4>Dicta, nostrum nemo soluta sapiente sit dolor quae voluptas quidem doloribus recusandae facere magni ullam suscipit sunt atque rerum eaque iusto facilis esse nam veniam incidunt officia perspiciatis at voluptatibus. Libero, aliquid illum possimus numquam fuga.</h4>
-     		<p class="text-right"><a class="btn btn-primary btn-large">Learn more Â»</a></p>
+     		<p class="text-right"><a class="btn btn-primary btn-large">Découvrir</a></p>
   		</div>
 
-</div>	<!-- /container -->
+	<!-- /container -->
 	
 	<!-- Social links. @TODO: replace by link/instructions in template -->
-	<section id="social">
+<!-- 	<section id="social">
 		<div class="container">
 			<div class="wrapper clearfix">
-				<!-- AddThis Button BEGIN -->
+				AddThis Button BEGIN
 				<div class="addthis_toolbox addthis_default_style">
 				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 				<a class="addthis_button_tweet"></a>
 				<a class="addthis_button_linkedin_counter"></a>
 				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
 				</div>
-				<!-- AddThis Button END -->
+				AddThis Button END
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- /social links -->
 
 	<c:import url="/WEB-INF/footer.jsp"></c:import>
