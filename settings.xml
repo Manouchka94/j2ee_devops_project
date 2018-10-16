@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">   
+    <proxies>
+        <proxy>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>si-devops-proxy.edf.fr</host>
+            <port>3128</port>
+            <nonProxyHosts>si-nexus-forge.edf.fr|si-devops-zhb-nexus.edf.fr</nonProxyHosts>
+        </proxy>
+    </proxies>
+    <mirrors>
+        <mirror>
+            <id>central-via-nexus-forge</id>
+            <mirrorOf>central</mirrorOf>
+            <url>http://si-nexus-forge.edf.fr/nexus/content/repositories/public-repo1-maven/</url>
+        </mirror>
+    </mirrors>
+    <servers>
+        <server>
+            <id>dvs-formation-snapshot</id>
+            <username>${COMPTE_ROBOT_PROJET_USER}</username>
+            <password>${COMPTE_ROBOT_PROJET_PASSWORD}</password>
+        </server>
+        <server>
+            <id>release</id>
+            <username>${COMPTE_ROBOT_PROJET_USER}</username>
+            <password>${COMPTE_ROBOT_PROJET_PASSWORD}</password>
+        </server>
+        <server>
+            <id>site</id>
+            <username>${COMPTE_ROBOT_PROJET_USER}</username>
+            <password>${COMPTE_ROBOT_PROJET_PASSWORD}</password>
+        </server>
+    </servers>
+</settings>

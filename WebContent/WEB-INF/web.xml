@@ -19,25 +19,25 @@
     <servlet-class>com.tuto.pro.servlets.Deconnexion</servlet-class>
   </servlet>
   <servlet>
-	<servlet-name>Download</servlet-name>
-	<servlet-class>com.tuto.pro.servlets.Download</servlet-class>
-	<init-param>
-		<param-name>chemin</param-name> 
-		<param-value>/fichiers/</param-value> 
-	</init-param>
+    <servlet-name>Download</servlet-name>
+    <servlet-class>com.tuto.pro.servlets.Download</servlet-class>
+    <init-param>
+      <param-name>chemin</param-name>
+      <param-value>/fichiers/</param-value>
+    </init-param>
   </servlet>
-<servlet>
-	<servlet-name>GestionTestJDBC</servlet-name>
-	<servlet-class>com.tuto.pro.servlets.GestionTestJDBC</servlet-class>
-</servlet>
-<servlet>
+  <servlet>
+    <servlet-name>GestionTestJDBC</servlet-name>
+    <servlet-class>com.tuto.pro.servlets.GestionTestJDBC</servlet-class>
+  </servlet>
+  <servlet>
     <servlet-name>Home</servlet-name>
     <servlet-class>com.tuto.pro.servlets.Home</servlet-class>
-</servlet>
-<servlet-mapping>
-	<servlet-name>GestionTestJDBC</servlet-name>
-	<url-pattern>/testjdbc</url-pattern>
-</servlet-mapping>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GestionTestJDBC</servlet-name>
+    <url-pattern>/testjdbc</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
     <servlet-name>Deconnexion</servlet-name>
     <url-pattern>/deconnexion</url-pattern>
@@ -51,12 +51,12 @@
     <url-pattern>/inscription</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-	<servlet-name>Download</servlet-name>
-	<url-pattern>/fichiers/*</url-pattern>
+    <servlet-name>Download</servlet-name>
+    <url-pattern>/fichiers/*</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-	<servlet-name>Home</servlet-name>
-	<url-pattern>/home</url-pattern>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/home</url-pattern>
   </servlet-mapping>
   <filter>
     <filter-name>RestrictionFilter</filter-name>
@@ -82,7 +82,7 @@
     <filter-name>Set Character Encoding</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
-<listener>
+  <listener>
     <listener-class>com.tuto.pro.config.InitialisationDaoFactory</listener-class>
-</listener>
+  </listener>
 </web-app>
